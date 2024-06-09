@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="./assets/icons/css/all.min.css">
+
+<!-- **********************************Vendors*************************************************** -->
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+<link rel="stylesheet" href="vendors/dataTables/dataTables.css">
+<link rel="stylesheet" href="vendors/bootstrap-icons.css">
+<link rel="stylesheet" href="vendors/dataTables/responsive.bootstrap5.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
+    <title>Document</title>
+</head>
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand   my-nav container-fluid">
+            <div class="container-fluid">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item dropdown my-drop">
+                    <div class=" img-fluid">
+                    <img src="assets/images/3135715.png" alt="" width="60rem" height="60rem" class="rounded-5 img-fluid">
+                </div>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hi,User
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Update Proile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+</header>
+
+  <!-- ****************************************************************************** -->
+    <div class=" d-flex ">
+        <aside id="sidebar" class="shadow-lg">
+            <div class="d-flex ">
+                <button class="toggle-btn" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="sidebar-logo">
+                    
+                    <h1 class="fs-2 fw-bold sidebar_header">Take Over</h1>
+                </div>
+            </div>
+            <ul class="sidebar-nav sidebaar">
+                <li class="sidebar-item">
+                    <li class="sidebar-item ">
+                        <a href="index.html" class="sidebar-link ">
+                            <i class="fa-solid fa-d "></i>
+                            <span>ashboard</span>
+                        </a>
+                    </li>
+                <li class="sidebar-item">
+                    <a href="orders.html" class="sidebar-link active">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="products.html" class="sidebar-link ">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+            
+                </li>
+                <li class="sidebar-item">
+                    <a href="slider.html" class="sidebar-link ">
+                        <i class="fa-solid fa-image"></i>
+                        <span>slider</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sales" aria-expanded="false" aria-controls="sales">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Sales</span>
+                    </a>
+                    <ul id="sales" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="./coupons.html" class="sidebar-link">Copoun</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="./flash_sale.html" class="sidebar-link">sale</a>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="sidebar-item">
+                    <a href="./categouries.html" class="sidebar-link">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>categouries</span>
+                    </a>
+                </li>
+                <li class="sidebar-item ">
+                    <a href="ShippingRule.html" class="sidebar-link">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Shipping Rule</span>
+                    </a>
+                </li>
+                <li class="sidebar-item ">
+                    <a href="./transactions.html" class="sidebar-link">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    
+        <!-- ************************************************************************************ -->
+<div class="container py-3">
+    <h2>Order Information</h2>
+    <div class= "">
+            <div class="d-flex flex-column row">
+            <div class=" p-3 col-10 bg-white shadow-lg">
+                <table id="myTable" class="table table-striped nowrap custom-table w-100" >
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>invoice id</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>product Quantity</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Payment Method</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+                <tbody> 
+                    <tr>
+                        <td>
+                            111111
+                        </td>
+                        <td>
+                            22222
+                        </td>
+                        <td>
+                            zzzz
+                        </td>
+                        <td>
+                            33333
+                        </td>
+                        <td>
+                            555555
+                        </td>
+                        <td>
+                            111111
+                        </td>
+                        <td>
+                            <p class=" my_btn  fw-bold pending text-center rounded-4">pending</p>
+                        </td>
+                        <td>
+                            aaaaa
+                        </td>
+                        <td>
+                            <div class=" d-flex gap-1 flex-column flex-md-row">
+                                <button class="btn my_btn" id="view_btn"> <a href="./order.html" class=" text-white">View</a></button>
+                                <button class="btn my_btn" >delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            454543
+                        </td>
+                        <td>
+                            112111
+                        </td>
+                        <td>
+                            45532523
+                        </td>
+                        <td>
+                        523525111
+                        </td>
+                        <td>
+                            32131
+                        </td>
+                        <td>
+                            423421
+                        </td>
+                        <td>
+                            <p class=" my_btn  fw-bold delivered text-center rounded-4">Delivered</p>
+                        </td>
+                        <td>
+                            bbbbb
+                        </td>
+                        <td>
+                            <div class=" d-flex gap-1 flex-column flex-md-row">
+                                <button class="btn my_btn" id="view_btn"> <a href="./order.html" class=" text-white">View</a></button>
+                                <button class="btn my_btn" >delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            345453
+                        </td>
+                        <td>
+                            53453
+                        </td>
+                        <td>
+                            ffff
+                        </td>
+                        <td>
+                            2353252
+                        </td>
+                        <td>
+                            525252
+                        </td>
+                        <td>
+                            765474
+                        </td>
+                        <td>
+                            <p class=" my_btn fw-bold shipped text-center rounded-4">Shipped</p>
+                        </td>
+                        <td>
+                            ccccc
+                        </td>
+                        <td>
+                            <div class=" d-flex gap-1 flex-column flex-md-row">
+                                <button class="btn my_btn" id="view_btn"> <a href="./order.html" class=" text-white">View</a></button>
+                                <button class="btn my_btn" >delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            
+           </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="assets/icons/all.min.js"></script>
+<script src="vendors/jquery/jquery-3.7.1.min.js"></script>
+<script src="vendors/jquery/jquery.dataTables.min.js"></script>
+<script src="vendors/dataTables/dataTables.bootstrap5.min.js"></script>
+<script src="vendors/dataTables/dataTables.responsive.min.js"></script>
+<script src="vendors/dataTables/responsive.bootstrap5.min.js"></script>
+<script src="vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+   
+</body>
+</html>

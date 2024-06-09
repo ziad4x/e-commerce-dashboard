@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/sales.css">
+
+        <link rel="stylesheet" href="vendors/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+
+
+        <link rel="stylesheet" href="vendors/dataTables/dataTables.dataTables.min.css">
+        <link rel="stylesheet" href="vendors/dataTables/responsive.bootstrap5.min.css">
+      
+      
+ 
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="">
+            <nav class="navbar navbar-expand   my-nav container-fluid">
+                <div class="container-fluid">
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown my-drop">
+                        <div class="">
+                        <img src="assets/images/3135715.png" alt="" width="60rem" height="60rem" class="rounded-5 img-fluid">
+                    </div>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hi,User
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile.html">Update Proile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+    </header>
+       <!-- **************************************************************************************** -->
+    <div class="wrapper">
+        <aside id="sidebar" class="shadow-lg">
+            <div class="d-flex ">
+                <button class="toggle-btn" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="sidebar-logo">
+                    
+                    <h1 class="fs-2 fw-bold sidebar_header">Take Over</h1>
+                </div>
+            </div>
+            <ul class="sidebar-nav sidebaar">
+                <li class="sidebar-item">
+                    <li class="sidebar-item ">
+                        <a href="index.html" class="sidebar-link ">
+                            <i class="fa-solid fa-d "></i>
+                            <span>ashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="orders.html" class="sidebar-link">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                <li class="sidebar-item">
+                    <a href="./products.html" class="sidebar-link ">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./slider.html" class="sidebar-link ">
+                        <i class="fa-solid fa-image"></i>
+                        <span>slider</span>
+                    </a>
+                </li>
+                 <li class="sidebar-item active">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sales" aria-expanded="false" aria-controls="sales">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Sales</span>
+                    </a>
+                    <ul id="sales" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="./coupons.html" class="sidebar-link">Copoun</a>
+                        </li>
+                        <li class="sidebar-item active">
+                            <a href="./flash_sale.html" class="sidebar-link">sale</a>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="sidebar-item">
+                    <a href="./categouries.html" class="sidebar-link">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>categouries</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="ShippingRule.html" class="sidebar-link">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Shipping Rule</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active ">
+                    <a href="./transactions.html" class="sidebar-link">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </aside>
+<!-- ****************************************************************************************************** -->
+<!-- inputs -->
+
+    <div class=" container py-3 px-3 " >
+        
+        <div class="row">
+            <h2>Flash Sale</h2>
+                    
+            <div class="col-11 col-md-12  p-1  ">
+                <div class=" d-flex flex-column ">
+             
+                
+                <div class="prodcut_input col-10 col-md-12 col-lg-12  d-flex flex-column gap-3">
+                    <div class="d-flex flex-column flex-md-row  p-3 bg-white shadow-lg">
+                    <div>
+                        <label for="">Flash Sale End Date:</label>
+                        <input type="date" name="" id="" class="w-100 w-md-auto">
+                        <button class="btn my_btn my-2">Save</button>
+                    </div>
+            </div>
+            <div class="bg-white p-3 shadow-lg">
+                <div>
+                    <label for="">Add Product:</label>
+                    <div class="form-floating">
+                       <select name="" id="" class=" form-select" >
+                         <option value="">1</option>
+                         <option value="">2</option>
+                       </select>
+                      </div>
+                </div>
+                <div class=" d-flex flex-column flex-md-row gap-md-5">
+                    <div class="w-50">
+                        <label for="">Show At Home?:</label>
+                        <div class="form-floating">
+                           <select name="" id="" class=" form-select" >
+                             <option value="">1</option>
+                             <option value="">2</option>
+                           </select>
+                          </div>
+                    </div>
+                    <div class="w-50">
+                        <label for="">Status:</label>
+                        <div class="form-floating">
+                           <select name="" id="" class=" form-select" >
+                             <option value="">1</option>
+                             <option value="">2</option>
+                           </select>
+                          </div>
+                    </div>
+                </div>
+            </div>     
+
+        </div>
+</div>
+<div class=" py-3  ">
+    <button class="btn my_btn w-auto ">Create New</button>
+    <div class="table-responsive">
+    <table class=" table  my-3">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Show AT Home</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+            <td>11</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+        </div>
+    </div>
+
+    <!-- ********************************************************************************** -->
+
+    <script src="assets/icons/all.min.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="vendors/bootstrap.bundle.min.js"></script>
+</body>
+</html>
